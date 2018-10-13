@@ -1,0 +1,25 @@
+{
+  "name": "alias-props",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "m3g4p0p"
+  },
+  "scripts": {
+    "lint": "standard index.js index.spec.js",
+    "test": "jasmine ./index.spec.js",
+    "watch": "nodemon -w index.js -w index.spec.js -x yarn test",
+    "prepublish": "yarn lint && yarn test"
+  },
+  "devDependencies": {
+    "jasmine": "^3.2.0",
+    "nodemon": "^1.18.4",
+    "standard": "^12.0.1"
+  },
+  "standard": {
+    "env": {
+      "jasmine": true
+    }
+  }
+}
